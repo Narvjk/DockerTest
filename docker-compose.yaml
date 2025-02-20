@@ -1,0 +1,5 @@
+services:
+  webseite:
+    image: git-registry.gibb.ch/tba145918/m347/balmerto-testprojekt	
+    ports:
+     - "80:80"
