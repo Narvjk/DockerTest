@@ -1,0 +1,60 @@
+/* Body */
+.booking-form {
+    background-color: #3b6b5f;  
+    padding: 20px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.booking-form input[type="text"],   
+.booking-form input[type="email"],
+.booking-form input[type="date"],
+.booking-form input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000; /* Textfarbe schwarz */
+    background-color: #fff; /* Hintergrundfarbe der Felder bleibt weiß */
+}
+
+.booking-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #DFB879;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.booking-form input[type="submit"]:hover {
+    background-color: #ffd38b;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .booking-container {
+        flex-direction: column; /* Elemente werden untereinander angeordnet */
+        align-items: center; /* Zentriert die Inhalte */
+    }
+    
+    .booking-form, .price-table {
+        width: 90%; /* Formularelement und Preistabelle nehmen 90% der Breite ein */
+        margin: 10px 0; /* Fügt etwas Abstand oben und unten hinzu */
+    }
+}
+

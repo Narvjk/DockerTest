@@ -1,0 +1,50 @@
+
+/* Content */
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.text-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 50px; /* Adjust based on icon size */
+    height: auto;
+    margin-right: 15px;
+}
+
+.text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.text strong {
+    font-weight: bold;
+}
+
+#texttitel {
+    margin-top: -4%;
+    text-align: center;
+    font-family: 'Tangerine', serif;
+    font-size: 5vw;
+}
+
+@media (max-width: 900px) {
+    .text {
+        font-size: 20px;
+    }
+
+    .text-block {
+        margin: 5%;
+    }
+
+    #texttitel {
+        font-size: 60px;
+    }
+}
+

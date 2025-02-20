@@ -1,0 +1,248 @@
+/* Allgemeine Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+}
+
+body {
+    background-color: #D8C39E;
+    color: #4A403A;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #3b6b5f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    color: #DFB879;
+}
+
+/* Standard Menu */
+.standard {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.standard li {
+    margin-left: 20px;
+}
+
+.standard li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    color: #DFB879;
+}
+
+.standard li a:hover {
+    text-decoration: underline;
+    color: #ffd188;
+}
+
+/* Sidebar for Mobile */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #3b6b5f8a;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px;  
+}
+
+.sidebar li {
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar a {
+    width: 100%;
+    margin: 30px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #DFB879;
+}
+
+.sidebar a:hover {
+    background-color: #3b6b5f;
+    color: #ffd188;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center ;
+    }
+}
+
+/* Überschrift */
+.container {
+    position: relative;
+    width: 100%; /* Bild füllt die gesamte Breite des Bildschirms */
+    height: auto;
+    overflow: hidden; /* Verhindert Überlauf, falls nötig */
+    margin-bottom: 5%;
+}
+
+#image1  {
+    width: 100%;
+    height: auto; /* Beibehaltung des Seitenverhältnisses */
+}
+
+#image2 {
+    width: 100%;    
+    height: auto; /* Beibehaltung des Seitenverhältnisses */
+}
+
+
+.titel {
+    font-family: 'Tangerine', serif;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: #DFB879; /* Schlichte weiße Schriftfarbe */
+    font-size: 7vw; /* Schriftgröße passt sich der Bildschirmbreite an */
+    text-align: center;
+    font-weight: 400; /* Normalgewichtige Schrift für einen modernen Look */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Dezenter, weicher Schlagschatten für Tiefe */
+}
+
+.smalltitel {
+    font-family: 'Tangerine', serif;
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: #DFB879; /* Schlichte weiße Schriftfarbe */
+    font-size: 1.5vw; /* Schriftgröße passt sich der Bildschirmbreite an */
+    text-align: center;
+    font-weight: 400; /* Normalgewichtige Schrift für einen modernen Look */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Dezenter, weicher Schlagschatten für Tiefe */
+}
+
+.transition-border {
+    height: 40px; /* Adjust height based on how smooth you want the transition */
+    background: linear-gradient(to bottom, #D8C39E, #3b6b5f); /* Gradient from body color to footer color */
+}
+
+.mobileBack {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .titel {
+        top: 25%;
+        left: 50%;
+        font-size: 18vw;
+    }
+
+    .smalltitel {
+        top: 35%;
+        left: 50%;
+        font-size: 5vw;
+    }
+
+    .mobileBack {
+        display: block;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3b6b5f;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p, h3, ul li a, a {
+    color: #DFB879;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+}
+
+.footer-container ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+    color: #ffd38b;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    color: #DFB879;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+    color: #ffd38b;
+}
+
+.tangerine-regular {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+}

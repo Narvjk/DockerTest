@@ -1,0 +1,61 @@
+/* Allgemeine Styles */
+p {
+    color: #ffffff;
+}
+
+body {
+    background-color: #D8C39E;
+    color: #4A403A;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.left-column {
+    width: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.left-column img {
+    border-radius: 8px;
+    border-color: #3b6b5f;
+    border-width: 5px;
+    border-style: solid;
+    width: 100%; /* Bild an die Breite der linken Spalte anpassen */
+    height: auto; /* Höhe automatisch anpassen */
+}
+
+.right-column {
+    width: 45%;
+    padding: 2%;
+    margin-right: 5%;
+}
+
+@media (max-width: 900px) {
+    body {
+        text-align: center;
+        align-items: center ;
+        display: block;
+    }
+
+    .content-container {
+        display: block;
+        font-size: 10px;
+    }
+
+    .left-column {
+        width: 100%; /* Auf volle Breite bei kleinen Bildschirmen setzen */
+        margin: 0, auto; /* Margin entfernen */
+    }
+
+    .right-column {
+        width: 80%;
+        margin: 0, auto;
+    }
+}
